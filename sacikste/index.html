@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendārs</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img src="/assets/images/logo.png" alt="logo"></a>
+        <div id="countdown"></div>
+        <nav>
+            <div id="hamburger">
+                <img src="/assets/images/menu.svg" alt="menu">
+            </div>
+            <ul id="nav-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="/sacikste" class="active">Kalendārs</a></li>
+                <li><a href="/halloffame">Hall of fame</a></li>
+                <li><a href="/cats">Čats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="center">
+        <h2>Kalendārs 2023</h2>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Nr</th>
+                    <th>Race</th>
+                    <th>Track</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Bahrein GP</td>
+                    <td>Sakira</td>
+                    <td>5.marts</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sauda Arabija GP</td>
+                    <td>Dzida</td>
+                    <td>19.marts</td>
+                    <td>19:00</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Australijas GP</td>
+                    <td>Melburna</td>
+                    <td>2.aprilis</td>
+                    <td>08:00</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Tiks precizēts</td>
+                    <td>Tiks precizēts</td>
+                    <td>16.aprilis</td>
+                    <td>Tiks precizēts</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Miami GP</td>
+                    <td>Miami</td>
+                    <td>7.maijs</td>
+                    <td>22:30</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Emilijas-Romanjas GP</td>
+                    <td>Imola</td>
+                    <td>21.maijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Monako GP</td>
+                    <td>Monako</td>
+                    <td>28.maijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Spanijas GP</td>
+                    <td>Barselona</td>
+                    <td>4.junijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Kanadas GP</td>
+                    <td>Monreala</td>
+                    <td>18.junijs</td>
+                    <td>21:00</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Austrijas GP(+Sprints)</td>
+                    <td>Red Bull Trase</td>
+                    <td>2.julijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Lielbritanijas GP</td>
+                    <td>Silverstona</td>
+                    <td>9.julijs</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Ungarijas GP</td>
+                    <td>Hungaroringa</td>
+                    <td>23.julijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Belgijas GP(+sprints)</td>
+                    <td>Spa</td>
+                    <td>30.julijs</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Niderlandes GP</td>
+                    <td>Zandvorta</td>
+                    <td>27.augusts</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Italijas GP</td>
+                    <td>Monca</td>
+                    <td>3.septembris</td>
+                    <td>16:00</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Singapuras GP</td>
+                    <td>Marinabeja</td>
+                    <td>17.septembris</td>
+                    <td>15:00</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Japānas GP</td>
+                    <td>Suzuka</td>
+                    <td>24.septembris</td>
+                    <td>08:00</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Kataras GP(+Sprints)</td>
+                    <td>Lozaila</td>
+                    <td>8.oktobris</td>
+                    <td>17:00</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>ASV GP</td>
+                    <td>Ostina</td>
+                    <td>22.oktobris</td>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Mehiko GP</td>
+                    <td>Mehiko</td>
+                    <td>29.oktobris</td>
+                    <td>22:00</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Sanpaulu GP(+Sprints)</td>
+                    <td>Interlagosa</td>
+                    <td>5.novembris</td>
+                    <td>19:00</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>Lasvegasas GP</td>
+                    <td>Lasvegasa</td>
+                    <td>19.novembris</td>
+                    <td>08:00</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>Abu Dabi GP</td>
+                    <td>Jasmarina</td>
+                    <td>26.novembris</td>
+                    <td>15:00</td>
+                </tr>
+
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <a class="logo" href="/">
+            <img src="/assets/images/logo-white.png" alt="Logo">
+        </a>
+        <div class="copyright">
+            &copy; 2023 F1
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/assets/scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/scripts/taimers.js"></script>
+</body>
+
+</html>

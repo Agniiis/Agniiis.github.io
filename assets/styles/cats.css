@@ -1,0 +1,133 @@
+form {
+  padding: 15px 25px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input {
+  padding: 5px 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: var(--header-height) 0 0 0;
+  padding: 0;
+  height: calc(100vh - var(--header-height) - var(--footer-height));
+}
+
+#wrapper {
+  width: 600px;
+  margin: auto;
+}
+
+#wrapper,
+#loginform {
+  margin: auto;
+  color: var(--text-color);
+  width: 600px;
+  max-width: 100%;
+  border: 2px solid #212121;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#loginform {
+  padding-top: 18px;
+  text-align: center;
+}
+
+#loginform p {
+  padding: 15px 25px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#chatbox {
+  text-align: left;
+  margin: 0 auto 25px;
+  padding: 10px;
+  background: rgb(235, 235, 235);
+  height: 300px;
+  width: 530px;
+  border: 1px solid #dd7f7f;
+  overflow: auto;
+  border-radius: 2px;
+  border-bottom: 3px solid #666666;
+}
+
+#usermsg {
+  flex: 1;
+  border-radius: 4px;
+  border: .1px solid #664848;
+}
+
+#usermsg:hover {
+  border-radius: 4px;
+  border: .1px solid #3fce32;
+}
+
+#name {
+  border-radius: 4px;
+  border: 1px solid #c78829;
+  padding: 2px 8px;
+}
+
+#submitmsg {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#enter {
+  background: var(--main-color);
+  color: var(--text-color);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.error {
+  color: #ff0000;
+}
+
+#menu {
+  padding: 15px 25px;
+  display: flex;
+}
+
+#menu p.welcome {
+  flex: 1;
+}
+
+a#exit {
+  background-color: var(--header-color);
+  border: none;
+  color: var(--text-color);
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.msgln {
+  padding: 3px;
+  font-size: .8rem;
+  color: var(--header-color);
+}

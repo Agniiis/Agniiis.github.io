@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cats</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" type="text/css" href="/assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/cats.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="/"><img src="/assets/images/logo.png" alt="logo"></a>
+        <div id="countdown"></div>
+        <nav>
+            <div id="hamburger">
+                <img src="/assets/images/menu.svg" alt="menu">
+            </div>
+            <ul id="nav-items">
+                <li><a href="/">Home</a></li>
+                <li><a href="/sacikste">Kalendārs</a></li>
+                <li><a href="/halloffame">Hall of fame</a></li>
+                <li><a href="/cats" class="active">Čats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="center">
+        <div id="wrapper">
+            <div id="menu">
+                <p id="chat-user-greeting" class="welcome">Welcome, <b>N/A</b></p>
+                <p class="logout"><a id="exit" href="/">Exit Chat</a></p>
+            </div>
+            <div id="chatbox"></div>
+            <form name="message" action="javascript:void(0);" onsubmit="sendChatMessage();">
+                <input name="usermsg" type="text" id="usermsg" />
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <a class="logo" href="/">
+            <img src="/assets/images/logo-white.png" alt="Logo">
+        </a>
+        <div class="copyright">
+            &copy; 2023 F1
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/assets/scripts/script.js"></script>
+    <script type="text/javascript" src="/assets/scripts/taimers.js"></script>
+    <script type="text/javascript" src="/assets/scripts/chat.js"></script>
+</body>
+
+</html>
