@@ -1,5 +1,5 @@
 const username = 'User#' + Math.floor(Math.random() * 1000);
-const vulgarWords = ["lohs", "stulbenis", "idiots", "bla","ble"]; // Vulgāro vārdu saraksts
+const vulgarWords = ["lohs", "losis", "stulbenis", "idiots", "bla","ble"]; // Vulgāro vārdu saraksts
 
 
 document.getElementById("chat-user-greeting").innerHTML = 'Welcome, <b>' + username + '</b>!';
