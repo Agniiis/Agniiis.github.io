@@ -1,5 +1,5 @@
 const username = 'User#' + Math.floor(Math.random() * 1000);
-const vulgarWords = ["lohs", "losis", "stulbenis", "idiots", "bla","ble"]; // Vulgāro vārdu saraksts
+const vulgarWords = ["lohs","losis", "stulbenis", "idiots", "bla","ble"]; // Vulgāro vārdu saraksts
 
 
 document.getElementById("chat-user-greeting").innerHTML = 'Welcome, <b>' + username + '</b>!';
@@ -17,7 +17,7 @@ function sendChatMessage() {
 
   const currentTime = Date.now();
   if (currentTime - lastMessageTimestamp < 1000) { // Pārbauda vai laika starpība starp pašreizējo ziņu un pēdējo ziņa ir 1 sekundes
-    console.log("Jūs varat sūtīt ziņas reizi sekundē!!");
+    displayPopUpMessage("Jūs varat sūtīt ziņas reizi sekundē!!");
     return;
   }
 
@@ -30,6 +30,7 @@ function sendChatMessage() {
 
   box.appendChild(msgln);
 }
+
 //Necenzēto vārdu funkcija
 function filterVulgarWords(message) {
   const words = message.split(" ");
@@ -42,4 +43,16 @@ function filterVulgarWords(message) {
   });
 
   return filteredWords.join(" "); //Apvieno filtrētos vārdus atpakaļ virknē
+}
+
+// Uzpeldošā ziņa
+function displayPopUpMessage(message) {
+  const popUpMessage = document.createElement("div");
+  popUpMessage.innerHTML = message;
+  popUpMessage.classList.add("pop-up");
+  document.body.appendChild(popUpMessage);
+
+  setTimeout(() => {
+    popUpMessage.remove();
+  }, 3000); // Ziņa automātiski pazūd pēc 3 sekundēm
 }
