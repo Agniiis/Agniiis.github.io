@@ -1,5 +1,5 @@
-//Atskaite līdz 18 junijam, atjaunina katru sekundi
-var countDown = new Date("June 18, 2023 21:00:00").getTime();
+//Atskaite līdz 2 julijam, atjaunina katru sekundi
+var countDown = new Date("July 2, 2023 16:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
     var distance = countDown - now;
